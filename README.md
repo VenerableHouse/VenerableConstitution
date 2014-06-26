@@ -1,6 +1,6 @@
-The official Ruddock House Constitution and Amendments.
+The official Ruddock House Constitution.
 ===================
-To view the constitution, simply click on any of the PDF documents above. 
+To view the constitution, simply click on the PDF document above. 
 
 This GitHub repository was created to enable transparency in storing and editing the Ruddock Constitution.
 
