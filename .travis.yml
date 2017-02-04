@@ -1,0 +1,20 @@
+branches:
+  only:
+  - master
+
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+script:
+- mkdir _build
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build constitution.tex
+
+deploy:
+  provider: releases
+  api_key:
+    secure: hMN1kudz83a2KAnmez3eVdqUiKI9wa42R+F0dGLpfHSTl5atrhP9Swe3M/hrsrALOYu1GhNNBSGnTYU9MD2/br729FadaIYwPYhql5/9EWMWDXsEFYlQRUyaEDIgIzAgzqmnvrERsE2uzyqAvFV8CgpgnzXtlPGfI0dN9nkJMBs=
+  file: _build/constitution.pdf
+  skip_cleanup: true
+
