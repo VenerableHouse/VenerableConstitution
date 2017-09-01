@@ -13,6 +13,13 @@ before_install:
 script:
 - mkdir _build
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build constitution.tex
+after_success:
+- printenv
+
+env:
+  global:
+    secure: hMN1kudz83a2KAnmez3eVdqUiKI9wa42R+F0dGLpfHSTl5atrhP9Swe3M/hrsrALOYu1GhNNBSGnTYU9MD2/br729FadaIYwPYhql5/9EWMWDXsEFYlQRUyaEDIgIzAgzqmnvrERsE2uzyqAvFV8CgpgnzXtlPGfI0dN9nkJMBs=
+
 
 deploy:
   provider: releases
