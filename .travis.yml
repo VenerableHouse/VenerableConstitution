@@ -8,18 +8,22 @@ branches:
 sudo: required
 dist: trusty
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended
-  texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
 script:
-- mkdir _build
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build constitution.tex
+  - mkdir _build
+  - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build constitution.tex
 after_success:
-- .travis/push.sh
+  # Push the constitution to the website repo
+  - .travis/push.sh
 
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "TravisCI"
+  - export TRAVIS_TAG=build-$(date +'%Y-%m-%d')
+  - git tag $TRAVIS_TAG
 deploy:
   provider: releases
-  api_key:
-    secure: hMN1kudz83a2KAnmez3eVdqUiKI9wa42R+F0dGLpfHSTl5atrhP9Swe3M/hrsrALOYu1GhNNBSGnTYU9MD2/br729FadaIYwPYhql5/9EWMWDXsEFYlQRUyaEDIgIzAgzqmnvrERsE2uzyqAvFV8CgpgnzXtlPGfI0dN9nkJMBs=
+  api_key: $GH_TOKEN
   file: _build/constitution.pdf
   skip_cleanup: true
 
