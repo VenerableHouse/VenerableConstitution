@@ -1,4 +1,4 @@
-# The official Ruddock House Constitution.
+# The official Venerable House Constitution.
 
 ## [View the PDF](https://github.com/RuddockHouse/RuddockConstitution/releases/latest) &nbsp;&nbsp;&nbsp; [![Travis](https://img.shields.io/travis/RuddockHouse/RuddockConstitution.svg)](https://travis-ci.org/RuddockHouse/RuddockConstitution)
 
