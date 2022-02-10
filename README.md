@@ -6,7 +6,7 @@ Whenever the constitution.tex file is changed, Travis CI will automatically comp
 
 [View the current Travis build here.](https://travis-ci.org/RuddockHouse/RuddockConstitution)
 
-**IMPORTANT**: Any time any change is made to the constitution, someone with SSH access to `that` will have to log in and git pull the RuddockWebsite repo on the server, once Travis has finished the build.
+**IMPORTANT**: Because changes to the website repository need to be manually pulled down into the production server, any change to the constitution will not be visible until someone SSHs into the server and updates it. See the website repository for instructions.
 
 If you have any questions about this repository, please contact a Ruddock IMSS Representative.
 
