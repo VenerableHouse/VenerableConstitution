@@ -1,7 +1,7 @@
 #!/bin/sh
 
 setup_git() {
-  git config --global user.email "travis@travis-ci.com"
+  git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis CI"
   # This is the only interesting line in the whole script. GH_TOKEN is defined in the Travis settings for this repository.
   # The value of GH_TOKEN is a Github Personal Access Token with write access to the RuddockWebsite repository.
