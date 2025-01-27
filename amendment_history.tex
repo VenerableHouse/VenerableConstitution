@@ -8,23 +8,28 @@
 
 \usepackage[dvipsnames]{xcolor} % allows font color change
 \usepackage{enumitem} % allows changing enumeration for sublists to match constitution numbering
+\usepackage{float}
+\usepackage{hyperref}
 
 \title{\includegraphics[width=1.55in]{venerable_crest.png} \\ Constitutional Amendment History}
 \author{Venerable House}
 \date{\today} % Displays date of latest build
 
+\newcommand{\add}[1]{\textcolor{ForestGreen}{#1}} % \add{new}
+\newcommand{\del}[1]{\textcolor{red}{#1}} % \del{old}
+\newcommand{\swap}[2]{\del{#1} \add{#2}} % \swap{old}{new}
 
 %%%%%%%%%% Why this document exists %%%%%%%%%%
 % The Amendment History document was created as a result of passage of a constitutional amendment written by Elaine Lowinger to keep track of changes to the constitution and the reasoning behind them: 
 %    8.4 Records
-%    If a proposed amendment is passed, the Constitution is modified to match the amended language. In addition, the proposal for the amendment shall be added to the “Amendment History” document. This includes the date of the amendment’s approval, the proposer of the amendment, the reasoning of the amendment, the unamended language, and the approved amended language. The Amendment History document shall be accessible to all Full Members of the House.
+%    If a proposed amendment is passed, the Constitution is modified to match the amended language. In addition, the proposal for the amendment shall be added to the “Amendment History” document. This includes the date of the amendment's approval, the proposer of the amendment, the reasoning of the amendment, the unamended language, and the approved amended language. The Amendment History document shall be accessible to all Full Members of the House.
 % As a result, this document started with four amendments passed on May 26, 2020 (including the Records Amendment) and retroactively includes amendments passed by January 19, 2019. Amendments are in reverse chronological order (newest to oldest).
 % It is the duty of the House Secretary to update the constitution and this Amendment History document.
 
 
 %%%%%%%%%% Structure of Each Entry %%%%%%%%%%
 % Each new amendment entry must include:
-% 1) the date of the amendment’s approval, 
+% 1) the date of the amendment's approval, 
 % 2) the proposer of the amendment, 
 % 3) the reasoning of the amendment, 
 % 4) the existing language, and 
@@ -45,6 +50,235 @@
 \begin{document}
 
 \maketitle
+
+\section{Soc/Ath Team Voting Amendment}
+\begin{itemize}
+    % \item \textbf{Date Passed:}
+    \item \textbf{Author:} Randy Ngo
+    \item \textbf{Reasoning:}
+    
+    This amendment clarifies how Social and Athletic team elections are run.
+
+    In the past, full members were allowed to run individually or in a team with other members. This caused two issues. First, individuals were put at a disadvantage if they did not have running mates but had to run against a team of candidates. Secondly, there is currently no mathematical method specified as to how a winner is chosen under an election where both individuals and teams can run. This amendment serves to fix both of those problems.
+
+    To standardize all multi-winner election procedures, the upperclass BoC election process has been modified to be in line with the new Social and Athletic team election procedures. The single transferable vote method\footnote{A more detailed explanation can be found here: \href{https://youtu.be/l8XOZJkozfI}{https://youtu.be/l8XOZJkozfI}} (Droop quota variation\footnote{\href{https://youtu.be/wRc630BSTIg}{https://youtu.be/wRc630BSTIg}}) was chosen as it is generally regarded as the most fair multi-winner electoral system and is commonly used in parliamentary elections around the world.
+    \item \textbf{Current Language:}
+    
+    A Procedural Amendment
+
+    Paper ballots shall be cast anonymously at a House Meeting held for that purpose. The Election Committee shall be responsible for collecting and tabulating ballots. The winner of each election, other than for the BoC representatives, shall be determined as follows: all candidates that do not achieve a majority over ``NO'' are eliminated, and the ranked pairs (Tideman) method is applied to the remaining candidates. The Election Committee shall be responsible for breaking any ties that occur during this process.
+    
+    For the election of the BoC representatives, each voter may cast two first choice votes and rank their replacements in the case that one of their first choices is eliminated. Votes shall be counted via elimination of the candidate with the lowest number of first choice votes until two candidates receive over 1/3 of the votes each.
+    
+    \item \textbf{Proposed Language:}
+    
+    A Procedural Amendment
+    
+    Paper ballots shall be cast anonymously at a House Meeting held for that purpose. The Election Committee shall be responsible for collecting and tabulating ballots. The winner of each election\del{, other than for the BoC representatives,} shall be determined as follows:
+
+    \setlength{\leftskip}{5mm}
+    \add{For positions where multiple individuals are elected, candidates must run individually. All candidates that do not achieve a majority over ``NO'' are eliminated, and the single transferable vote method is applied using the Droop quota.}
+    
+    \add{For all other positions,} all candidates that do not achieve a majority over ``NO'' are eliminated, and the ranked pairs (Tideman) method is applied to the remaining candidates.
+    
+    \setlength{\leftskip}{0mm}
+    The Election Committee shall be responsible for breaking any ties that occur during \del{this process} \add{these processes}.
+
+    \del{For the election of the BoC representatives, each voter may cast two first choice votes and rank their replacements in the case that one of their first choices is eliminated. Votes shall be counted via elimination of the candidate with the lowest number of first choice votes until two candidates receive over 1/3 of the votes each.}
+\end{itemize}
+
+\section{UCC Eligibility Amendment}
+\begin{itemize}
+    % \item \textbf{Date Passed:}
+    \item \textbf{Author:} Randy Ngo
+    \item \textbf{Reasoning:} The constitution currently does not allow transfer students to apply to become UCCs until their second year at Caltech, even if they were to be juniors or seniors during their term in office. This amendment serves to expand UCC application eligibility for that scenario.
+    
+    \item \textbf{Current Language:} \\
+        2.3 Duties and Qualifications of Appointed Officers \\
+        1. One Upper Class Committee-member shall reside in each Venerable House Alley and two shall reside off-campus, except in the case where no suitable volunteers can be found living off-campus, in which case the Off-Campus Upper Class Committee-members may live on-campus. An Upper Class Committee-member shall have been both enrolled at Caltech for at least five academic terms and a Full House Member for at least three academic terms prior to their term of office. A Peer Advocate shall have been both enrolled at Caltech for at least five academic terms and a Full House Member for at least three academic terms prior to their term of office. They shall be available to counsel any member of the House, particularly the occupants of the alley in which they reside or, in the case of an Off-Campus Upper Class Committee-member, any off-campus member. They shall be responsible for maintaining order and enforcing the rules and policies of the House. They shall not concurrently be an Upper Class Committee-member and hold a position on the Executive Committee.
+
+    \item \textbf{Proposed Language:} \\
+        2.3 Duties and Qualifications of Appointed Officers \\
+        1. One Upper Class Committee-member shall reside in each Venerable House Alley and two shall reside off-campus, except in the case where no suitable volunteers can be found living off-campus, in which case the Off-Campus Upper Class Committee-members may live on-campus. An Upper Class Committee-member shall \add{be a junior or above during their term of office and} have been \del{both enrolled at Caltech for at least five academic terms and} a Full House Member for at least three academic terms prior to their term of office. A Peer Advocate shall have been both enrolled at Caltech for at least five academic terms and a Full House Member for at least three academic terms prior to their term of office.\footnote{This sentence is subject to removal from the Appointed Positions Current Practices Amendment; however, these two amendments are non-conflicting and thus are not subject to clause 8.2.2.} They shall be available to counsel any member of the House, particularly the occupants of the alley in which they reside or, in the case of an Off-Campus Upper Class Committee-member, any off-campus member. They shall be responsible for maintaining order and enforcing the rules and policies of the House. They shall not concurrently be an Upper Class Committee-member and hold a position on the Executive Committee.
+\end{itemize}
+
+\section{Appointed Positions Current Practices Amendment}
+\begin{itemize}
+    % \item \textbf{Date Passed:}
+    \item \textbf{Author:} Noah Howell and Joe Giambrone
+    \item \textbf{Reasoning:} Clarified many aspects of appointed positions to align with current practices. There are no ``new'' additions; everything below has already been in effect for a while, sometimes years.
+    \begin{itemize}
+        \item Fixed title to match previous section on Elected Officers.
+        \item Removed almost all mentions of Peer Advocates as they are no longer a House-appointed position, leading to confusion with UCCs.
+        \item Replaced ``Diversity Council'' with a single ``Diversity Representative'' as there is only one of them, and updated the name of the Caltech Center for Inclusion and Diversity.
+        \item Moved the selection of the Diversity Representative to be during the second round of appointed positions, to keep in line with recent practices.
+        \item Updated the role of the Head UCC and Diversity Representative in the selection of appointed positions.
+        \item Removed outdated duties of the Historians as they no longer make a scrapbook or maintain a House roll.
+        \item Pluralized ``Head Waiters'' as there is more than one of them.
+        \item Updated position names of BFD Editors, O'Domhnaills Representatives, IMSS Representatives, BoC Representatives, Head Waiters, and Historians to remove the preceding ``House(-elected)'' or otherwise fix.
+        \item Added name and description of the BFD Advisor.
+        \item Updated timeline for sign-ups and appointments.
+        \item Removed amendment election tabulation from being a UCC responsibility to match recent practices.
+        % \item Included requirement that officers with guaranteed rooms must be officers of Venerable House specifically (and not of another house).
+        \item Fixed various small typos.
+    \end{itemize}
+
+    \item \textbf{Current Language:} \\
+        2.3 Duties and Qualifications of Appointed Officers \\
+        1. One Upper Class Committee-member shall reside in each Venerable House Alley and two shall reside off-campus\footnote{We denote an off-campus member of Venerable House as a member who does not physically reside in the house.}, except in the case where no suitable volunteers can be found living off-campus, in which case the Off-Campus Upper Class Committee-members may live on-campus. An Upper Class Committee-member shall have been both enrolled at Caltech for at least five academic terms and a Full House Member for at least three academic terms prior to their term of office. A Peer Advocate shall have been both enrolled at Caltech for at least five academic terms and a Full House Member for at least three academic terms prior to their term of office. They shall be available to counsel any member of the House, particularly the occupants of the alley in which they reside or, in the case of an Off-Campus Upper Class Committee-member, any off-campus member. They shall be responsible for maintaining order and enforcing the rules and policies of the House. They shall not concurrently be an Upper Class Committee-member and hold a position on the Executive Committee. \\
+        2. The Head Upper Class Committee-member shall have all the qualifications and duties of an Upper Class Committee-member. They shall be the head and ex officio member of the Upper Class Committee. They shall be responsible for the entire frosh selection except for the duties delegated to the President. The Head Upper Class Committee-member shall have previously served as a Venerable Upper Class Committee-member, except in the case where no suitable volunteers can be found. \\
+        3. The Diversity Councilmembers shall be responsible for liaising with the Caltech Center for Diversity. They shall also represent the House on the campus-wide Advocacy Committee. They shall be available to advise any member of the House on issues pertaining to diversity. They shall select one Representative to be present during the selection of the Upper Class Committee and the Diversity Council. This Representative may not reapply for a position on the succeeding Diversity Council. In the case where no suitable volunteers can be found, the Head Upper Class Committee-person shall act as a proxy for the Diversity Council during the selection of the Upper Class Committee and the Diversity Council. \\
+        4. The Historians shall be responsible for all recording and preservation of House records and traditions, including House scrapbook, House history, and House roll, and for submission of the House article in the Institute yearbook. \\
+        5. The Head Waiter shall be responsible for maintaining proper decorum and conduct in the dining room, and shall direct the student waiters. The Head Waiter shall be the Food Representative for Venerable House. \\
+        6. The House BFD Editors shall be responsible for publishing the House paper. \\
+        7. The House O'Domhnaill's Suppliers shall maintain the House convenience store. \\
+        8. The House IMSS Representatives shall act as liaisons between House members and Information Management Systems and Services for network, application, hardware, and software problems. The IMSS Representatives shall include the following: \\ \\
+        2.4 Nominations, Elections, and Appointments \\
+        5. Upper Class Committee-member sign-ups, Peer Advocate sign-ups, and Diversity Councilmember sign-ups shall be posted concurrently. All Upper Class Committee-members, Peer Advocates, and Diversity Councilmembers shall be appointed at the same meeting. The entire Executive Committee, the current Head Upper Class Committee-member, and the Diversity Council Representative will be present for selection. Selected Peer Advocates will be members of the Upper Class Committee. The term of service for those selected to be members of the Upper Class Committee will be the academic year directly following their appointment, with the exception of the newly-appointed Head Upper Class Committee-member and Diversity Council-members, who will begin serving in their roles during Third Term. \\
+        6. The interview committee committee for Peer Advocates will be composed of the Head Upper Class Committee-member, the President, the Sophomore Representative, and the highest-ranking sophomore member of the Executive Committee. If there are no sophomore members of the Executive Committee, then the Vice President will fulfill this role. The interview committee for non-Peer Advocate Upper Class Committee-member positions will be composed of members of the Executive Committee and the Upper Class Committee as the Head Upper Class Committee-member and President see fit. \\
+        7. Sign-up lists for non-Upper Class Committee-member appointed offices shall be posted between the first day of Third Term and the third Friday of Third Term. Sign-up lists shall be removed and appointments made by the Executive Committee two weeks thereafter. The term of service for appointed offices shall be the academic year directly following their appointment by the Executive Committee. \\ \\
+        2.6 Recall of Upper Class Committee-members \\
+        2. The procedure shall be as follows: \\
+        (a) Petitions, containing reasons and purpose, must be submitted either in writing to or in an interview with the Head Upper Class Committee-member and the President; \\
+        i. If the petition is for the Head Upper Class Committee-member, it may be only the President in the interview, and the Head Upper Class Committee-member will be absent from following procedures; similarly, if petitioned person is the Diversity Council Representative, they will be absent from following procedures; \\
+        (b) A meeting will be held in the presence of the entire Executive Committee, the current Head Upper Class Committee-member, and the Diversity Council Representative for removal; \\ \\
+        4.3 Powers and Duties of the Committee \\
+        The Upper Class Committee: \\
+        2. shall be responsible for the administration and tabulation of recall and amendment elections. \\
+        3. shall be autonomous in all matter of judicial policy not otherwise specified in this Constitution. \\ \\
+        7.2 Guarantees \\
+        7. Entire rooms shall be guaranteed to the following officers: \\
+        (a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager and Social Mini (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member) for the entire academic year following the election or appointment provided the officer completes their term. If an officer quits their office mid-term, the room guarantee shall transfer to the succeeding officeholder for the remainder of the guaranteed term. \\
+        8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Head UCC, On Campus UCCs, Social Mini, IHC Chair, ASCIT President, BoC Chair, Social Team (up to three members including the Social Manager and Social Mini), Athletic Team (up to two members including the Athletic Manager), House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member).
+
+    \item \textbf{Proposed Language:} \\
+        2.3 \del{Duties and} Qualifications \add{and Duties} of Appointed Officers \\
+        1. One Upper Class Committee-member shall reside in each Venerable House Alley and two shall reside off-campus, except in the case where no suitable volunteers can be found living off-campus, in which case the Off-Campus Upper Class Committee-members may live on-campus. An Upper Class Committee-member shall have been both enrolled at Caltech for at least five academic terms and a Full House Member for at least three academic terms prior to their term of office.\footnote{subject to change from the UCC Eligibility Amendment} \del{A Peer Advocate shall have been both enrolled at Caltech for at least five academic terms and a Full House Member for at least three academic terms prior to their term of office.} They shall be available to counsel any member of the House, particularly the occupants of the alley in which they reside or, in the case of an Off-Campus Upper Class Committee-member, any off-campus member. They shall be responsible for maintaining order and enforcing the rules and policies of the House. They shall not concurrently be an Upper Class Committee-member and hold a position on the Executive Committee. \\
+        2. The Head Upper Class Committee-member shall have all the qualifications and duties of an Upper Class Committee-member. They shall be the head and ex officio member of the Upper Class Committee. \add{They shall be present during the selection of all appointed offices.} They shall be responsible for the entire frosh selection except for the duties delegated to the President. The Head Upper Class Committee-member shall have previously served as a Venerable Upper Class Committee-member, except in the case where no suitable volunteers can be found. \\
+		3. The Diversity \swap{Councilmembers}{Representative} shall be responsible for liaising with the Caltech Center for \add{Inclusion and} Diversity. They shall also represent the House on the campus-wide Advocacy Committee. They shall be available to advise any member of the House on issues pertaining to diversity. They shall \del{select one Representative to} be present during the selection of \swap{the Upper Class Committee and the Diversity Council. This}{all appointed offices. The Diversity} Representative may not reapply for \swap{a position on the succeeding Diversity Council}{this office}. In the \swap{case where no suitable volunteers can be found}{event that the Diversity Representative is absent}, the Head Upper Class Committee-person shall act as a proxy for the Diversity \swap{Council}{Representative} during the selection of \swap{the Upper Class Committee and the Diversity Council}{appointed offices}. \\
+        4. The Historians shall be responsible for all recording and preservation of House records\add{,} \del{and} traditions, \del{including House scrapbook, House} \add{and} history, \del{and House roll,} and for submission of the House article in the Institute yearbook. \\
+        5. The Head Waiter\add{s} shall be responsible for maintaining proper decorum and conduct in the dining room, and shall direct the student waiters. \swap{The}{One among the} Head Waiter\add{s} shall be the Food Representative for Venerable House. \\
+        6. The \del{House} BFD Editors shall be responsible for publishing the House paper. \add{The BFD Advisor shall approve the content of and handle complaints about the House paper.} \\
+        7. The \del{House} O'Domhnaill\del{'}s \swap{Suppliers}{Representatives} shall maintain the House convenience store. \\
+        8. The \del{House} IMSS Representatives shall act as liaisons between House members and Information Management Systems and Services for network, application, hardware, and software problems. The IMSS Representatives shall include the following: \\ \\
+        2.4 Nominations, Elections, and Appointments \\
+        5. Upper Class Committee-member sign-ups\del{, Peer Advocate sign-ups, and Diversity Councilmember sign-ups} shall be posted concurrently. All Upper Class Committee-members\del{, Peer Advocates, and Diversity Councilmembers} shall be appointed at the same meeting\add{, which shall take place before the installation of the newly elected officers}. The entire Executive Committee, the current Head Upper Class Committee-member, and the Diversity \del{Council} Representative will be present for selection\add{, with the exception of those who have applied to become a member of the succeeding Upper Class Committee}. \del{Selected Peer Advocates will be members of the Upper Class Committee.} The term of service for those selected to be members of the Upper Class Committee will be the academic year directly following their appointment, with the exception of the newly-appointed Head Upper Class Committee-member \del{and Diversity Council-members}, who will begin serving in their role\swap{s during Third Term}{at the beginning of third term}. \\
+        6. \del{The interview committee committee for Peer Advocates will be composed of the Head Upper Class Committee-member, the President, the Sophomore Representative, and the highest-ranking sophomore member of the Executive Committee. If there are no sophomore members of the Executive Committee, then the Vice President will fulfill this role.} The interview committee for \del{non-Peer Advocate} Upper Class Committee-member positions will be composed of members of the Executive Committee and the Upper Class Committee as the Head Upper Class Committee-member and President see fit. \\
+        7. Sign-up lists for non-Upper Class Committee-member appointed offices shall be posted \swap{between the first day of Third Term and the third Friday of Third Term. Sign-up lists shall be removed and appointments made by the Executive Committee}{no later than the third Friday of third term, and shall close} two weeks thereafter. \add{All non-Upper Class Committee-member appointed offices shall be appointed at the same meeting, which shall take place within the two weeks following. The entire Executive Committee, the current Head Upper Class Committee-member, and the Diversity Representative shall be present for selection. In the case where a member of the selection committee has applied for an office appointed at this meeting, they shall be absent during the selection of that office.} The term of service for appointed offices shall be the academic year directly following their appointment by the Executive Committee\add{, with the exception of the Diversity Representative, who will begin serving in their role immediately after their appointment}. \\ \\
+        2.6 Recall of Upper Class Committee-members \\
+        2. The procedure shall be as follows: \\
+        (a) Petitions, containing reasons and purpose, must be submitted either in writing to or in an interview with the Head Upper Class Committee-member and the President; \\
+        i. If the petition is for the Head Upper Class Committee-member, it may be only the President in the interview, and the Head Upper Class Committee-member will be absent from following procedures; similarly, if petitioned person is the Diversity \del{Council} Representative, they will be absent from following procedures; \\
+        (b) A meeting will be held in the presence of the entire Executive Committee, the current Head Upper Class Committee-member, and the Diversity \del{Council} Representative for removal; \\ \\
+        4.3 Powers and Duties of the Committee \\
+        The Upper Class Committee: \\
+        2. shall be responsible for the administration and tabulation of recall \del{and amendment} elections. \\
+        3. shall be autonomous in all matter\add{s} of judicial policy not otherwise specified in this Constitution. \\ \\
+        7.2 Guarantees \\
+        7. Entire rooms shall be guaranteed to the following officers: \\
+        (a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager and Social Mini (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, \del{House-elected} BoC Representatives (up to two members, with one of the two members being a rising sophomore), O'Domhnaill\del{'}s \swap{Suppliers}{Representatives} (up to two members), \del{House} Head Waiter\add{s} (one member), \del{House} BFD editors (one member), \del{House} Historians (one member) for the entire academic year following the election or appointment provided the officer completes their term. If an officer quits their office mid-term, the room guarantee shall transfer to the succeeding officeholder for the remainder of the guaranteed term. \\
+        8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Head UCC, On Campus UCCs, Social Mini, IHC Chair, ASCIT President, BoC Chair, Social Team (up to three members including the Social Manager and Social Mini), Athletic Team (up to two members including the Athletic Manager), \del{House-elected} BoC Representatives (up to two members, with one of the two members being a rising sophomore), O'Domhnaill\del{'}s \swap{Suppliers}{Representatives} (up to two members), \del{House} Head Waiter\add{s} (one member), \del{House} BFD editors (one member), \del{House} Historians (one member).
+\end{itemize}
+
+\section{Elected Positions Current Practices Amendment}
+\begin{itemize}
+    % \item \textbf{Date Passed:}
+    \item \textbf{Author:} Joe Giambrone
+    \item \textbf{Reasoning:} Clarified many aspects of elected positions to align with current practices. There are no ``new'' additions; everything below has already been in effect for a while, sometimes years.
+    \begin{itemize}
+        \item Updated the duties of the Vice President, Secretary, Treasurer, Librarian, Social Team, Athletic Team, and Sophomore Representative, as their current descriptions are lacking or outdated.
+        \item Updated the timeline for nominations.
+        \item Updated the requirements for President, Vice President, BoC Representative, and Electcomm to allow for super-seniors.
+        \item Removed the requirement for Electcomm to be fully random to allow for more flexibility in the selection process, such as first-come, first-serve.
+    \end{itemize}
+
+    \item \textbf{Current Language:} \\
+        2.2 Qualifications and Duties of Elected Officers \\
+        1. The President shall reside in Venerable House and shall be a junior or senior for the latter portion of their term in office. They shall represent the House on the Interhouse Committee, preside over House Meetings, be chairperson of the Executive Committee, and be an ex-officio member of all House committees, and shall be responsible for selecting Full Members to attend frosh picks. \\
+        2. The Vice President shall be a junior or senior for the latter portion of their term in office. They shall assume the duties of the President in the event of the President's absence. They shall be responsible for maintaining the external relations of the House, for bringing guests to the House, and shall act as official host for all House guests. They shall be the Venerable representative on the Review Committee. They shall share duties with the Treasurer in maintaining house property. \\
+        3. The Secretary shall record minutes, including all motions made and the votes on these by all officers present, of all House, Executive Committee, and Upper Class Committee meetings; and post publicly a copy of the minutes of all open meetings. They shall have custody of all House records not specifically delegated to the custody of another officer, and in general shall perform all the duties of a corresponding and recording secretary. They shall be responsible for room assignments. \\
+        4. The Treasurer shall be responsible to the House for all receipts and expenditures, shall maintain an adequate book-keeping system, shall submit a report to the Executive Committee at each regularly scheduled meeting, shall propose a budget to the Executive Committee for each term, and shall submit to the House a written report of the finances at the end of each term. They shall share duties with the Vice President in maintaining house property. \\
+        5. The Librarian shall reside in Venerable House and shall be a sophomore for the latter portion of their term in office. They shall be responsible for procuring magazines and newspapers, and for maintaining the House Library, including its records. They shall publish a House list at the beginning of each term. They shall be responsible for frosh orientation and organizing the frosh members of the House for the performance of those tasks assigned to them. \\
+        6. The office of Social Team shall be held by not more than five members of the House, among them a Social Manager and Social Mini. The Social Team will be responsible for organizing social functions, and for publishing a calendar of such events. \\
+        7. The office of Athletic Team shall be held by not more than three members of the House, among them a single Athletic Manager. The Athletic Team shall be responsible for all athletic equipment used by the House, for the participation of the House in Interhouse and intrahouse athletics, and in general shall organize and promote the athletic activities of the House. \\
+        8. The office of Sophomore Representative shall be held by a sophomore for the latter portion of their term in office. They shall be responsible for representing the thoughts and ideas of the sophomore members of the House on the Executive Committee. \\ \\
+        2.4 Nominations, Elections, and Appointments \\
+        1. Nominations for ARC representative, CRC representative, three BoC representatives, Sophomore Representative, Athletic Manager, Athletic Team, Social Manager, Social Mini, Social Team, Librarian, Treasurer, Secretary, Vice President, and President, in that order, shall be made at a meeting of the House held for that purpose between the beginning of the second term and the third Friday of second term. Nominations shall remain open until 36 hours before the start of the elections as described in section 2.4.2. \\
+        (a) Two of the three BoC representatives shall be a junior or senior for the latter portion of their term in office. One of the three BoC representatives shall be a sophomore for the latter portion of their term in office.
+        \\ \\
+        A Procedural Amendment \\
+        An Election Committee shall be appointed at the nomination meeting. The Election Committee shall be composed of nine Full House Members: 3 sophomores, 3 juniors and 3 seniors, who shall be randomly selected from a pool of volunteers who are not running for an elected office. In the event that too few members of a specific class volunteer, the remaining members shall be drawn from the other classes.
+
+    \item \textbf{Proposed Language:} \\
+        2.2 Qualifications and Duties of Elected Officers \\
+        1. The President shall reside in Venerable House and shall be a junior or \swap{senior}{above} for the latter portion of their term in office. They shall represent the House on the Interhouse Committee, preside over House Meetings, be chairperson of the Executive Committee, and be an ex-officio member of all House committees, and shall be responsible for selecting Full Members to attend frosh picks. \\
+        2. The Vice President shall be a junior or \swap{senior}{above} for the latter portion of their term in office. They shall assume the duties of the President in the event of the President's absence. They shall be responsible for maintaining the external relations of the House, for bringing guests to the House, and shall act as official host for all House guests. They shall be the Venerable representative on the Review Committee \add{and the Caltech Y}. They shall share duties with the Treasurer in maintaining house property. \\
+        3. The Secretary shall record minutes\del{, including all motions made and the votes on these by all officers present,} of all House\swap{,}{ and} Executive Committee\del{, and Upper Class Committee} meetings; and post publicly a copy of the minutes of all open meetings. \add{They shall maintain House communication channels and alumni relations. They shall be responsible for room assignments and serve as the House Picks Officer.} They shall have custody of \add{the House Membership list, the House Calendar, the House Constitution, and} all House records not specifically delegated to \del{the custody of} another officer, and in general shall perform all the duties of a corresponding and recording secretary. \del{They shall be responsible for room assignments.} \\
+        4. The Treasurer shall be responsible to the House for all receipts and expenditures\swap{,}{\!\!. They} shall maintain an adequate book-keeping system, \del{shall submit a report to the Executive Committee at each regularly scheduled meeting,} shall propose a budget to the Executive Committee for each \swap{term}{academic year}, and shall submit to the House a written report of the finances at the end of each term. \add{They shall be responsible for the procurement and distribution of House-owned subscription services.} They shall share duties with the Vice President in maintaining house property. \\
+        5. The Librarian shall reside in Venerable House and shall be a sophomore for the latter portion of their term in office. They shall be responsible \del{for procuring magazines and newspapers, and} for maintaining the House Library, including its records. \del{They shall publish a House list at the beginning of each term.} They shall be responsible for frosh orientation\add{,} \del{and} organizing the frosh members of the House for the performance of those tasks assigned to them\add{, and organizing frosh-oriented activities}. \add{They shall maintain a list of the birthdays of House Members and announce them accordingly.} \\
+        6. The office of Social Team shall be held by not more than five members of the House, among them a Social Manager and Social Mini. The Social Team will be responsible for organizing social functions\swap{, and for publishing a calendar of such events}{and House trips}. \\
+        7. The office of Athletic Team shall be held by not more than three members of the House, among them a single Athletic Manager. The Athletic Team shall be responsible for all athletic equipment used by the House, for the participation of the House in Interhouse and intrahouse athletics, \add{for the procurement, sale, and distribution of House merchandise to House Members and alumni,} and in general shall organize and promote the athletic activities of the House. \\
+        8. The office of Sophomore Representative shall be held by a sophomore for the latter portion of their term in office. \add{They shall be responsible for organizing events for the frosh and the sophomores.} They shall be responsible for representing the thoughts and ideas of the sophomore members of the House on the Executive Committee. \\ \\
+        2.4 Nominations, Elections, and Appointments \\
+        1. Nominations for ARC representative, CRC representative, three BoC representatives, Sophomore Representative, Athletic Manager, Athletic Team, Social Manager, Social Mini, Social Team, Librarian, Treasurer, Secretary, Vice President, and President, in that order, shall be made at a meeting of the House held for that purpose between the beginning of the second term and the \swap{third Friday}{fifth Sunday} of second term. Nominations shall remain open until 36 hours before the start of the elections as described in \swap{section}{Section} 2.4.2. \\
+        (a) Two of the three BoC representatives shall be a junior or \swap{senior}{above} for the latter portion of their term in office. One of the three BoC representatives shall be a sophomore for the latter portion of their term in office.
+        \\ \\
+        A Procedural Amendment \\
+        An Election Committee shall be appointed at the nomination meeting. The Election Committee shall be composed of nine Full House Members: 3 sophomores, 3 juniors\add{,} and 3 seniors \add{or above}, who shall be \del{randomly} selected from a pool of volunteers who are not running for an elected office. In the event that too few members of a specific class volunteer, the remaining members shall be drawn from the other classes.
+
+\end{itemize}
+
+\section{Quorum Current Practices Amendment}
+\begin{itemize}
+    % \item \textbf{Date Passed:}
+    \item \textbf{Author:} Joe Giambrone and Noah Howell 
+    \item \textbf{Reasoning:} Clarified many aspects of quorum to align with current practices. There are no ``new'' additions; everything below has already been in effect for a while, sometimes years.
+    \begin{itemize}
+        \item Replaced instances of ``elected'' with ``voted in'' or ``voted on'' to better reflect the process of gaining membership and remove ambiguity with elected positions.
+        \item Clarified the requirements to become a Social Member, as previously ``abstain'' counted as ``no''.
+        \item Clarified the general quorum requirement for House meetings (including membership meetings, amendments meetings, and election meetings), and added references to the section containing this requirement where applicable, to remove ambiguity.
+        \item Updated membership type of the Resident Associates.
+        \item Removed the public ``roll of those members who have voted'' for amendments, as this violated the secrecy of the ballot and is no longer practiced.
+    \end{itemize}
+    
+    \item \textbf{Current Language:} \\
+        1.2 Membership \\
+        1. The types and qualifications of membership are: \\
+        (a) a Full Member, who is an undergraduate of the California Institute of Technology and is picked as such at the end of Rotation Week, or is elected at a House meeting by a 2/3 majority of non-abstain votes with at least 50\% of the members present voting ``Yes''; \\
+        (b) a Social Member, who is an undergraduate at the California Institute of Technology and has been elected as such, following a week of consideration, by a simple majority of those voting, when those voting constitute at least 1/3 of the House Membership; \\
+        (d) the Resident Associates, who shall be considered to be non-voting Full Members. \\
+        2. Full and social members who discontinue paying their house dues while they are registered students at the California Institute of Technology must be re-elected at a house meeting as provided for in Section 1.2, part 1a. \\ \\
+        5.2 Quorum \\
+        1. A quorum shall consist of the larger of: \\
+        (a) 1/3 of the Full-Membership of the House, or \\
+        (b) 80\% of the average attendance of House meetings held during the three hundred sixty-five (365) days prior to the announced date of the meeting regardless of whether those meetings established quorum. \\ \\
+        8.2 Necessary Vote \\
+        1. In the case of non-conflicting amendments, an amendment to this Constitution passes if at least 2/3 of the votes cast are in favor of the amendment. \\ \\
+        8.3 Procedure \\
+        3. Voting \\
+        (d) A roll of those members who have voted shall be available throughout the election. \\ \\
+        A Procedural Amendment \\
+        Paper ballots shall be cast anonymously at a House Meeting held for that purpose. The Election Committee shall be responsible for collecting and tabulating ballots. The winner of each election, other than for the BoC representatives, shall be determined as follows: all candidates that do not achieve a majority over “NO” are eliminated, and the ranked pairs (Tideman) method is applied to the remaining candidates. The Election Committee shall be responsible for breaking any ties that occur during this process.
+
+    \item \textbf{Proposed Language:} \\
+        1.2 Membership \\
+        1. The types and qualifications of membership are: \\
+        (a) a Full Member, who is an undergraduate of the California Institute of Technology and is picked as such at the end of Rotation Week, or is \swap{elected}{voted in} at a House meeting by a 2/3 majority of non-abstain votes with at least 50\% of the members present voting ``Yes''\add{, when quorum is established as per Section 5.2}; \\
+        (b) a Social Member, who is an undergraduate at the California Institute of Technology and has been \swap{elected}{voted in} as such, following a week of consideration, by a simple majority of \swap{those voting, when those voting constitute at least 1/3 of the House Membership}{non-abstain votes, when quorum is established as per Section 5.2}; \\
+        (d) the Resident Associates, who shall be considered to be \swap{non-voting Full}{Associate} Members. \\
+        2. Full and social members who discontinue paying their house dues while they are registered students at the California Institute of Technology must be \swap{re-elected}{voted on again} at a house meeting as provided for in Section 1.2, part 1\swap{a}{to regain their membership}. \\ \\
+        5.2 Quorum \\
+        1. A quorum shall consist of \del{the larger of}: \\
+        (a) 1/3 of the Full\swap{-}{}Membership of the House\add{.} \del{, or \\
+        (b) 80\% of the average attendance of House meetings held during the three hundred sixty-five (365) days prior to the announced date of the meeting regardless of whether those meetings established quorum.} \\ \\
+        8.2 Necessary Vote \\
+        1. In the case of non-conflicting amendments, an amendment to this Constitution passes if at least 2/3 of the votes cast are in favor of the amendment\add{, when quorum is established as per Section 5.2}. \\ \\
+        8.3 Procedure \\
+        3. Voting\add{:} \\
+        \del{(d) A roll of those members who have voted shall be available throughout the election.} \\ \\
+        A Procedural Amendment \\
+        Paper ballots shall be cast anonymously at a House Meeting held for that purpose. The Election Committee shall be responsible for collecting and tabulating ballots. \add{Quorum must be established as per Section 5.2.} The winner of each election, other than for the BoC representatives, shall be determined as follows: all candidates that do not achieve a majority over “NO” are eliminated, and the ranked pairs (Tideman) method is applied to the remaining candidates. The Election Committee shall be responsible for breaking any ties that occur during this process.
+\end{itemize}
 
 \section{UCC Recall Amendment}
 \begin{itemize}
@@ -95,8 +329,8 @@
 	2.4.1. Nominations for ARC representative, CRC representative, three BoC representatives, Off-Campus Representative, Sophomore Representative, Athletic Manager, Athletic Team, Social Manager, Social Team, Librarian, Treasurer, Secretary, Vice President, and President, in that order, shall be made at a meeting of the House held for that purpose between the beginning of the second term and the third Friday of second term. Nominations shall remain open until 36 hours before the start of the elections as described in section 2.4.2. \\
 	2.4.2. Election of all officers except Social Team and Athletic Team shall be carried out at a House Meeting held for that purpose within one week after the nomination meeting. The order of election shall be in the following order: President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Sophomore Representative, Off-Campus Representative, three BoC representatives, CRC representative, ARC representative. Elections shall be managed by an Election Committee in accordance with the Procedural Amendment (Amendment A). \\
 	3.2. The Executive Committee shall consist of the President, who shall act as chairperson, the Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Sophomore Representative, and Off-Campus Representative. \\
-	7.2.7. Entire rooms shall be guaranteed to the following officers: (a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O’Domhnaill’s Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member) \\
-	7.2.8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Head UCC, On Campus UCCs, IHC Chair, ASCIT President, BoC Chair, Social Team, Athletic Team, House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O’Domhnaill’s Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member).
+	7.2.7. Entire rooms shall be guaranteed to the following officers: (a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member) \\
+	7.2.8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Head UCC, On Campus UCCs, IHC Chair, ASCIT President, BoC Chair, Social Team, Athletic Team, House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member).
 	\item \textbf{Proposed Language:} \\
 	2.2.6. The office of Social Team shall be held by not more than five members of the House, among them a \textcolor{red}{single} Social Manager \textcolor{ForestGreen}{and Social Mini}. The Social Team will be responsible for organizing social functions, and for publishing a calendar of such events. \\
 	\textcolor{red}{2.2.9. The office of Off-Campus Representative shall be held by a member of the House who has resided off-campus for at least one full academic term. They shall be responsible for representing the thoughts and ideas of the Off-Campus members of the House on the Executive Committee.} \\
@@ -104,8 +338,8 @@
 	2.4.1. Nominations for ARC representative, CRC representative, three BoC representatives, \textcolor{red}{Off-Campus Representative,} Sophomore Representative, Athletic Manager, Athletic Team, Social Manager, \textcolor{ForestGreen}{Social Mini,} Social Team, Librarian, Treasurer, Secretary, Vice President, and President, in that order, shall be made at a meeting of the House held for that purpose between the beginning of the second term and the third Friday of second term. Nominations shall remain open until 36 hours before the start of the elections as described in section 2.4.2. \\
 	2.4.2. Election of all officers except Social Team and Athletic Team shall be carried out at a House Meeting held for that purpose within one week after the nomination meeting. The order of election shall be in the following order: President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, \textcolor{ForestGreen}{Social Mini,} Sophomore Representative, \textcolor{red}{Off-Campus Representative,} three BoC representatives, CRC representative, ARC representative. Elections shall be managed by an Election Committee in accordance with the Procedural Amendment (Amendment A). \\
 	3.2. The Executive Committee shall consist of the President, who shall act as chairperson, the Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, \textcolor{ForestGreen}{Social Mini, and} Sophomore Representative\textcolor{red}{, and Off-Campus Representative}. \\
-	7.2.7. Entire rooms shall be guaranteed to the following officers: (a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager \textcolor{ForestGreen}{and Social Mini} (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O’Domhnaill’s Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member). \\
-	7.2.8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, \textcolor{ForestGreen}{Social Mini,} Athletic Manager, Head UCC, On Campus UCCs, IHC Chair, ASCIT President, BoC Chair, Social Team \textcolor{ForestGreen}{(up to three members including the Social Manager and Social Mini)}, Athletic Team \textcolor{ForestGreen}{(up to two members including the Athletic Manager)}, House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O’Domhnaill’s Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member).
+	7.2.7. Entire rooms shall be guaranteed to the following officers: (a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager \textcolor{ForestGreen}{and Social Mini} (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member). \\
+	7.2.8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, \textcolor{ForestGreen}{Social Mini,} Athletic Manager, Head UCC, On Campus UCCs, IHC Chair, ASCIT President, BoC Chair, Social Team \textcolor{ForestGreen}{(up to three members including the Social Manager and Social Mini)}, Athletic Team \textcolor{ForestGreen}{(up to two members including the Athletic Manager)}, House-elected BoC Representatives (up to two members, with one of the two members being a rising sophomore), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member).
 \end{itemize}
 
 \section{BoC Amendment}
@@ -120,9 +354,9 @@
 	\textit{And} \\
 	7.2 Guarantees \\
 	7. Entire rooms shall be guaranteed to the following officers: \\
-	(a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, House-elected BoC Representatives (up to two members), O’Domhnaill’s Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member) \\
+	(a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, House-elected BoC Representatives (up to two members), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member) \\
 	(b) for the entire academic year following the election or appointment provided the officer completes their term. If an officer quits their office mid-term, the room guarantee shall transfer to the succeeding officeholder for the remainder of the guaranteed term. \\
-	8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Head UCC, On Campus UCCs, IHC Chair, ASCIT President, BoC Chair, Social Team, Athletic Team, House-elected BoC Representatives (up to two members), O’Domhnaill’s Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member).
+	8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Head UCC, On Campus UCCs, IHC Chair, ASCIT President, BoC Chair, Social Team, Athletic Team, House-elected BoC Representatives (up to two members), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member).
 	\item \textbf{Proposed Language:} \\
 	2.4 Nominations, Elections, and Appointments \\
 	1. Nominations for ARC representative, CRC representative, \textcolor{red}{two} \textcolor{ForestGreen}{three} BoC representatives, OffCampus Representative, Sophomore Representative, Athletic Manager, Athletic Team, Social Manager, Social Team, Librarian, Treasurer, Secretary, Vice President, and President, in that order, shall be made at a meeting of the House held for that purpose between the beginning of the second term and the third Friday of second term. Nominations shall remain open until 36 hours before the start of the elections as described in section 2.4.2. \\
@@ -131,8 +365,8 @@
 	\textit{And} \\
 	7.2 Guarantees \\
 	7. Entire rooms shall be guaranteed to the following officers: \\
-	(a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, House-elected BoC Representatives (up to two members\textcolor{ForestGreen}{, with one of the two members being a rising sophomore}), O’Domhnaill’s Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member) for the entire academic year following the election or appointment provided the officer completes their term. If an officer quits their office mid-term, the room guarantee shall transfer to the succeeding officeholder for the remainder of the guaranteed term. \\
-	8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Head UCC, On Campus UCCs, IHC Chair, ASCIT President, BoC Chair, Social Team, Athletic Team, House-elected BoC Representatives (up to two members\textcolor{ForestGreen}{, with one of the two members being a rising sophomore}), O’Domhnaill’s Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member).
+	(a) In order of preference, President, Vice President, Secretary, Treasurer, Librarian, Social Team including the Social Manager (up to three members), Athletic Team including the Athletic Manager (up to two members), Head UCC, On Campus UCCs (one member per alley), Peer Advocates, IHC Chair, ASCIT President, BoC Chair, House-elected BoC Representatives (up to two members\textcolor{ForestGreen}{, with one of the two members being a rising sophomore}), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member) for the entire academic year following the election or appointment provided the officer completes their term. If an officer quits their office mid-term, the room guarantee shall transfer to the succeeding officeholder for the remainder of the guaranteed term. \\
+	8. The officer room pick order shall be President, Vice President, Secretary, Treasurer, Librarian, Social Manager, Athletic Manager, Head UCC, On Campus UCCs, IHC Chair, ASCIT President, BoC Chair, Social Team, Athletic Team, House-elected BoC Representatives (up to two members\textcolor{ForestGreen}{, with one of the two members being a rising sophomore}), O'Domhnaill's Suppliers (up to two members), House Head Waiter (one member), House BFD editors (one member), House Historians (one member).
 \end{itemize}
 
 \section{Name Change Amendment}
@@ -163,7 +397,7 @@
 \begin{itemize}
 	\item \textbf{Date Passed:} 5/26/2020
 	\item \textbf{Author:} Sierra Lopezalles
-	\item \textbf{Reasoning:} The position of Food Representative is not currently in the constitution, this amendment both adds Food Rep to the constitution and makes it a part of the role of being Head Waiter. The Head Waiter is the person best suited to being Food Rep since they are present at most dinners and are best able to judge the house’s response to meals.
+	\item \textbf{Reasoning:} The position of Food Representative is not currently in the constitution, this amendment both adds Food Rep to the constitution and makes it a part of the role of being Head Waiter. The Head Waiter is the person best suited to being Food Rep since they are present at most dinners and are best able to judge the house's response to meals.
 	\item \textbf{Current Language:} \\
 	2.3 Duties and Qualifications of Appointed Officers \\
 	5. The Head Waiter shall be responsible for maintaining proper decorum and conduct in the dining room, and shall direct the student waiters.
@@ -214,7 +448,7 @@
 	\item \textbf{Proposed Language:} \\
 	\textcolor{ForestGreen}{
 	8.4 Records \\
-	If a proposed amendment is passed, the Constitution is modified to match the amended language. In addition, the proposal for the amendment shall be added to the “Amendment History” document. This includes the date of the amendment’s approval, the proposer of the amendment, the reasoning of the amendment, the unamended language, and the approved amended language. The Amendment History document shall be accessible to all Full Members of the House.}
+	If a proposed amendment is passed, the Constitution is modified to match the amended language. In addition, the proposal for the amendment shall be added to the “Amendment History” document. This includes the date of the amendment's approval, the proposer of the amendment, the reasoning of the amendment, the unamended language, and the approved amended language. The Amendment History document shall be accessible to all Full Members of the House.}
 \end{itemize}
 
 \section{IMSS Representative Amendment}
@@ -348,8 +582,8 @@
 	\begin{enumerate}[label=(\alph*)]
 		\item intended number of occupants, then 
 		\item intended number of sophomore occupants, then 
-		\item sophomores’ office as specified in section 7.2.8, then 
-		\item sophomores’ random order prepared prior to the section 7.1.2a Room Hassle in a manner proscribed by the Secretary. 
+		\item sophomores' office as specified in section 7.2.8, then 
+		\item sophomores' random order prepared prior to the section 7.1.2a Room Hassle in a manner proscribed by the Secretary. 
 	\end{enumerate}
 	
 	7.1.6. In the event that no members of the sophomore class wish to reside within the off-campus alley, the standard pick order shall be used.
@@ -372,8 +606,8 @@
 		\begin{enumerate}[label=(\alph*)]
 			\item intended number of occupants, then 
 			\item intended number of sophomore occupants, then 
-			\item sophomores’ office as specified in section 7.2.8, then 
-			\item sophomores’ random order prepared prior to the section 7.1.2a Room Hassle in a manner proscribed by the Secretary. 
+			\item sophomores' office as specified in section 7.2.8, then 
+			\item sophomores' random order prepared prior to the section 7.1.2a Room Hassle in a manner proscribed by the Secretary. 
 		\end{enumerate}
 	}
 	\textcolor{red}{
@@ -385,7 +619,7 @@
 \begin{itemize}
 	\item \textbf{Date Passed:} 2/17/2019
 	\item \textbf{Author:} Sarah Jeoung
-	\item \textbf{Reasoning:} The proposed establishment of the Diversity Council is intended to help with coverage in Ruddock’s support system. The Diversity Council shall help in ensuring representation of underrepresented minorities both during the selection of the UCC team and in general. A past member of the Diversity Council will help select the new Council. 
+	\item \textbf{Reasoning:} The proposed establishment of the Diversity Council is intended to help with coverage in Ruddock's support system. The Diversity Council shall help in ensuring representation of underrepresented minorities both during the selection of the UCC team and in general. A past member of the Diversity Council will help select the new Council. 
 	\item \textbf{Current Language:} \\
 	2.3 Duties and Qualifications of Appointed Officers \\
 	None \\
@@ -403,7 +637,7 @@
 \begin{itemize}
 	\item \textbf{Date Passed:} 1/19/2019
 	\item \textbf{Author:} Emily Wu and Erik Herrera
-	\item \textbf{Reasoning:} The current version of the constitution uses only ‘He/him/his’ pronouns. We would like to use more inclusive language. This would benefit current Ruddock House members and all the classes to come. 
+	\item \textbf{Reasoning:} The current version of the constitution uses only ‘He/him/his' pronouns. We would like to use more inclusive language. This would benefit current Ruddock House members and all the classes to come. 
 	\item \textbf{Current Language:} Numerous instances. The change will apply to the entire constitution.
 	\item \textbf{Proposed Language:} Change everywhere the constitution uses male-centered language to gender-neutral language. Examples include \textcolor{red}{he/him/his} to genderless pronouns (\textcolor{ForestGreen}{they/them}) or avoid pronoun use, Committee\textcolor{red}{man} to Committee\textcolor{ForestGreen}{-member}, and fresh\textcolor{red}{man} to \textcolor{ForestGreen}{frosh}. 
 \end{itemize}
@@ -415,11 +649,11 @@
 	\item \textbf{Reasoning:}  As of now, Veep can assume more House responsibilities. The lack of Veep duties results from the Veep/HUCC split two years ago. Treasurer already has a lot of responsibilities, and it would be nice to distribute work more evenly. Makes sense to shift responsibilities in this manner.
 	\item \textbf{Current Language:} \\
 	2.2 Qualifications and Duties of Elected Officers \\
-	2. The Vice President shall be a junior or senior for the latter portion of his term in office. He shall assume the duties of the President in the event of the President’s absence. He shall be responsible for maintaining the external relations of the House, for bringing guests to the House, and shall act as official host for all House guests. He shall be the Ruddock representative on the Review Committee. \\
+	2. The Vice President shall be a junior or senior for the latter portion of his term in office. He shall assume the duties of the President in the event of the President's absence. He shall be responsible for maintaining the external relations of the House, for bringing guests to the House, and shall act as official host for all House guests. He shall be the Ruddock representative on the Review Committee. \\
 	4. The Treasurer shall be responsible to the House for all receipts and expenditures, shall maintain an adequate book-keeping system, shall submit a report to the Executive Committee at each regularly scheduled meeting, shall propose a budget to the Executive Committee for each term, and shall submit to the House a written report of the finances at the end of each term. 
 	\item \textbf{Proposed Language:} \\
 	2.2 Qualifications and Duties of Elected Officers \\
-	2. The Vice President shall be a junior or senior for the latter portion of his term in office. He shall assume the duties of the President in the event of the President’s absence. He shall be responsible for maintaining the external relations of the House, for bringing guests to the House, and shall act as official host for all House guests. He shall be the Ruddock representative on the Review Committee. \textcolor{ForestGreen}{They shall share duties with the Treasurer in maintaining house property.} \\
+	2. The Vice President shall be a junior or senior for the latter portion of his term in office. He shall assume the duties of the President in the event of the President's absence. He shall be responsible for maintaining the external relations of the House, for bringing guests to the House, and shall act as official host for all House guests. He shall be the Ruddock representative on the Review Committee. \textcolor{ForestGreen}{They shall share duties with the Treasurer in maintaining house property.} \\
 	4. The Treasurer shall be responsible to the House for all receipts and expenditures, shall maintain an adequate book-keeping system, shall submit a report to the Executive Committee at each regularly scheduled meeting, shall propose a budget to the Executive Committee for each term, and shall submit to the House a written report of the finances at the end of each term. \textcolor{ForestGreen}{They shall share duties with the Vice President in maintaining house property.}
 \end{itemize}
 
